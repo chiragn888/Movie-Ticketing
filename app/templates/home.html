@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Application Name</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="static/styles.css">
+    <!-- Link to external JS -->
+    <script src="static/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Navigation links -->
+        <nav>
+            <ul>
+                <li><a href="index">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Content specific to the home page -->
+        {% block content %}
+        <h1>Welcome to Our Application</h1>
+        <p>This application is designed to provide users with a seamless experience in managing their tasks.</p>
+        <!-- Example of a dynamic content expected from the Python backend -->
+        <div>
+            <h2>Features:</h2>
+            <ul>
+                <li>Feature 1: Description</li>
+                <li>Feature 2: Description</li>
+                <!-- More features can be dynamically added here -->
+            </ul>
+        </div>
+        <!-- Interactive elements like forms or buttons -->
+        <div>
+            <h2>Get Started</h2>
+            <form action="start" method="post">
+                <input type="submit" value="Click Here to Begin">
+            </form>
+        </div>
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2023 Application Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
